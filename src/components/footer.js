@@ -1,8 +1,8 @@
 import React from "react";
-import telegram from "../icons/icons8-telegram-app-48.png"
-import instagram from "../icons/icons8-instagram-64.png"
-import whatsapp from "../icons/icons8-whatsapp-48.png"
-import github from "../icons/icons8-github-94.png"
+import telegram from "../icons/icons8-telegram-100.png"
+import instagram from "../icons/icons8-instagram-100.png"
+import whatsapp from "../icons/icons8-whatsapp-100.png"
+import github from "../icons/icons8-github-100.png"
 
 export default function Footer(){
     return(

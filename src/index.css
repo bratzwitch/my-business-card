@@ -1,4 +1,10 @@
 body{
+    margin: 0;
+}
+#light ,body{
+    background-color: #F5F5F5;
+}
+#dark ,body{
     background-color: #23252C;
 }
 .my-photo{
@@ -7,17 +13,45 @@ body{
     border-radius: 6px;
 }
 .head-info{
-    border-radius: 6px;
+    border-radius: 24px;
+    width: 317px;
+    margin: 0 auto;
+    background-color: #1A1B21;
+    height: 600px;
+}
+#light .head-info{
+    background-color: #967a7a5e;
+}
+#dark .head-info{
+    background-color: #1A1B21;
+}
+.main-info{
+    padding-top: 0px;
+    border-radius: 24px;
     width: 317px;
     margin: 0 auto;
     background-color: #1A1B21;
 }
-.main-info{
-    border-radius: 6px;
+#light .main-info{
+    background-color: #967a7a5e;
+}
+#dark .main-info{
+    background-color: #1A1B21;
+}
+.icon-links{
+    border-radius: 24px;
     width: 317px;
     margin: 0 auto;
-    background-color: #1A1B21;
-
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+#light .icon-links{
+    background-color: #967a7a5e;
+}
+#dark .icon-links{
+    background-color: #F5F5F5;;
 }
 .my-name{
     height: 25.81px;
@@ -29,6 +63,12 @@ body{
     text-align: center;
     color: #FFFFFF;
 }
+#light .my-name{
+    color: black;
+}
+#dark .main-info{
+    color: #FFFFFF;
+}
 .my-title{
     font-family: 'Inter';
     font-style: normal;
@@ -36,6 +76,12 @@ body{
     font-size: 12.8px;
     line-height: 15px;
     text-align: center;
+    color: #F3BF99;
+}
+#light .my-title{
+    color: black;
+}
+#dark .my-title{
     color: #F3BF99;
 }
 .my-site{
@@ -47,11 +93,19 @@ body{
     text-align: center;
     color: #F5F5F5;
 }
+#light .my-site{
+    color: black;
+}
+#dark .my-site{
+    color: #F5F5F5;
+}
 .links{
     display: flex;
     width: 317px;
     height: 34px;
-    padding-left: 20px;
+    padding-left: 18px;
+    padding-bottom: 20px;
+    margin: 0;
 
 }
 .email-block{
@@ -61,12 +115,13 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 9px 13px 9px 11px;
     gap: 8px;
     background: #FFFFFF;
     border: 1px solid #D1D5DB;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
+    border-radius: 24px;
+    margin-right: 20px;
+    padding: 5px 5px 5px 5px;
 }
 .linkedin-block{
     width: 115px;
@@ -75,47 +130,89 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 9px 13px 9px 11px;
     gap: 8px;
     background: #5093E2;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
+    border-radius: 24px; 
+    padding: 7px 10px 5px 10px;
 }
-.about{
+.email-text{
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 2px;
+}
+.li-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 2px;
+}
+.my-mail{
+    height: 20px;
+    width: 20px;
+}
+.my-li{
+    height: 20px;
+    width: 20px;
+}
+.about{
+    padding: 20px 20px 10px 20px ;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
     color: #F5F5F5;
 }
 .interests{
+    padding: 10px 20px 20px 20px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 150%;
     color: #F5F5F5;
 }
-.icon-links{
-    border-radius: 6px;
-    width: 317px;
-    margin: 0 auto;
-    background-color: #1A1B21;
-    display: flex;
+#light .about{
+    color: black;
+}
+#dark .about{
+    color: #F5F5F5;
+}
+#light .interests{
+    color: black;
+}
+#dark .interests{
+    color: #F5F5F5;
 }
 .tg-icon{
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
+    padding-right: 8px;
 }
 .my-inst{
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
+    padding-right: 8px;
 }
 .my-wa{
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
+    padding-right: 8px;
 }
 .my-git{
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
+}
+#light .switch label{
+    color: black;
+}
+#dark .switch label{
+    color: white;
+}
+.switch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
 }
